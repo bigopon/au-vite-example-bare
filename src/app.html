@@ -1,1 +1,7 @@
-<div>${message}</div>
+<import from="./components/my-button"></import>
+<import from="./components/my-input"></import>
+
+<my-input label="Welcome message" value.bind="message"></my-input>
+<my-button label="Reset message" click.trigger="message = ''">Clear</my-button>
+
+<div><strong>Display</strong>: ${message}</div>
