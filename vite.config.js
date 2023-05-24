@@ -3,12 +3,6 @@ import aurelia from '@aurelia/vite-plugin';
 import esbuild from 'esbuild';
 
 export default defineConfig({
-  esbuild: {
-    loader: {
-      '.js': 'ts',
-      'js': 'ts'
-    }
-  },
   plugins: [
     aurelia(),
     {
